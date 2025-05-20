@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Folio</title>
+</head>
+
+<body>
+
+    <!-- Page -->
+    <div class="page">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-inner">
+                    <div class="header-brand">
+                        WEBDEVELOPER
+                    </div>
+                    <div class="header-logo">
+                        <img class="" src="./img/code.svg" alt="">
+                    </div>
+                    <nav class="header-nav">
+                        <a class="header-nav-link active" href="index.html">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- End header -->
+
+        <!-- Main -->
+        <div class="container">
+            <main class="content">
+                <h3 class="title"><?php echo $status_error ?></h3>
+                <h1 class="title">Registration</h1>
+
+
+                <form class="form" action="/index.php" method="post">
+                    <div class="form-group">
+                        <input class="input" type="text" placeholder="Name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <input class="input" type="text" placeholder="Email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <input class="input" type="number" placeholder="Phone" name="phone">
+                    </div>
+                    <!-- <div class="form-group">
+                        <textarea class="textarea" name="text" placeholder="Message"></textarea>
+                    </div> -->
+
+                    <form-group>
+                        <button class="btn btn-full" type="submit">Send Message</button>
+                    </form-group>
+                </form>
+                
+            </main>
+        </div>
+        <!-- End content -->
+        <img class="author" src="./img/wednesday-addams-with-umbrella.png" alt="">
+
+        <footer class="footer">
+            <div class="container">
+                <div class="contacts">
+                    <a class="contacts-link" href="mailto:info.wednesday@gmail.com"><img class="contacts-icon" src="./img/mail.svg" alt="">info.wednesday@gmail.com
+                    </a>
+                    <a class="contacts-link" href="tel:+371255531">
+                        <img class="contacts-icon" src="./img/tel.svg" alt="">+371-255-531</a>
+                     <div class="empty-link"></div>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+    <!-- End page -->
+
+</body>
+
+</html>
+
+
+
+
+<!-- <div class="form-container">
+    <div class="form-control">
+        <form class="text" action=""></form>
+    </div>
+
+    <div class="form-control">
+        Email
+    </div>
+    <div class="form-control">
+        Phone
+    </div>
+    <div class="form-control">
+        Message
+    </div>
+</div> -->
