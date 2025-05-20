@@ -26,7 +26,7 @@ error_reporting(E_ALL);
 
 
 if (empty($_FILES['preview']['name'])) {
-    header("Location: /3.3/index.php");
+    header("Location: index.php");
     die;
 }
 
@@ -41,7 +41,7 @@ move_uploaded_file($file_tmp, 'uploads/' . $file_name);
 
 
 if (in_array($file_type, $allowed_types)) {
-    header("Location: /3.3/index.php");
+    header("Location: index.php");
 } else {
     ?> 
     <!DOCTYPE html>
